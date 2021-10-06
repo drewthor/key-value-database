@@ -21,7 +21,7 @@ func (dc DatastoreController) Routes() chi.Router {
 
 	r.Get("/get", dc.Get)
 	r.Post("/set", dc.Set)
-	r.Delete("/delete", dc.Delete)
+	r.Post("/delete", dc.Delete)
 
 	return r
 }
